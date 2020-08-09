@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../Assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../Assets/favicon/site.webmanifest">
+    <title>Sign Up page</title>
+    <style>
+        body {
+            background: #edd382;
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            color: #f33016;
+            font-family: 'Montserrat bold', sans-serif;
+            font-size: 550%;
+        }
+        h3 {
+            margin: 0;
+            font-size: 300%;
+            font-family: 'Montserrat regular', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <img src="../Assets/logo.svg" class="logo">
+        <div class="nav-items">
+            <a href="../index.html">Home</a>
+            <a href="#" class="active">Countdown</a>
+            <a href="shop-page.html">Products</a>
+            <a href="#">Cart</a>
+            <span><a href="login.html">Login</a>/
+                <a href="signup.html">Signup</a></span>
+        </div>
+    </nav>
+    <main class="countdown-timer">
+        <h1 id="demo"></h1>
+        <h3>to Launch</h3>
+    </main>
+<script src="../script.js"></script>
+
+</body>
+</html>
