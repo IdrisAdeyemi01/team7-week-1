@@ -49,15 +49,15 @@ button, button:hover {
     flex-direction: row;
     justify-content: space-between;
     color: #2d3047;
-    font-size: 17px;
+    font-size: 19px;
     font-family: 'Montserrat regular', sans-serif;
 }
-.nav-items a {
+.nav-bar .nav-items a {
     color: #2d3047;
-    font-size: 17px;
+    font-size: 18px;
     font-family: 'Montserrat regular', sans-serif;
 }
-.nav-items a:hover, .nav-items .active {
+.nav-bar .nav-items a:hover, .nav-items .active {
     color: #181925;
     font-family: 'Montserrat bold', sans-serif;
     text-decoration: underline;
@@ -71,25 +71,21 @@ button, button:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    color: rgba(0,0,0,0.6);
+    color: rgba(0,0,0,0.75);
     font-size: 17px;
     font-family: 'Montserrat regular', sans-serif;
 }
-.hero-cnt {
+.hero .hero-cnt {
     width: 40%;
 }
-.hero-cnt .title {
+.hero .hero-cnt .title {
     color: #09048b;
     margin-bottom: 6%;
     font-size: 40px;
     font-family: 'Montserrat bold', sans-serif;
     
 }
-.hero-img {
-    width: 60%;
-    height: auto;
-}
-.explore-btn {
+.hero .hero-cnt .explore-btn {
     display: block;
     text-align: center;
     width: 130px;
@@ -104,9 +100,15 @@ button, button:hover {
     cursor: pointer;
     transition: 1s;
 }
-.explore-btn:hover {
+.hero .hero-cnt .explore-btn:hover {
     opacity: 1;
 }
+.hero .hero-img {
+    width: 60%;
+    height: auto;
+}
+
+/* THE LOGIN AND SIGNUP PAGE STYLES */
 .login-container {
     width: 100%;
     margin: 3% 0;
@@ -117,18 +119,18 @@ button, button:hover {
     align-items: center;
     background: #e6bb89;
 }
-.login-form {
+.login-container .login-form {
     width: 70%;
     margin: 0;
     padding: 2% 5%;
     border-radius: 5px;
     background: transparent;
 }
-.login input[type="submit"] {
+.login-container .login input[type="submit"] {
     width: 100%;
     height: 40px;
 }
-.login input[type="email"], .login input[type="password"] {
+.login-container .login input[type="email"], .login input[type="password"] {
     width: 100%;
     border: none;
     display: block;
@@ -137,7 +139,28 @@ button, button:hover {
     padding: 10px;
     margin-bottom: 20px;
 }
-.login input[type="checkbox"] {
+.login-container .login input[type="checkbox"] {
     display: inline-block;
     margin-bottom: 12px;
+}
+
+/* THE PRODUCTS PAGE STYLES */
+.store-item {
+    width: 100%;
+    margin: 3% 0;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.images {
+    background-image: url(../Assets/images/items.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 700px;
+    height: 700px;
+}
+.others {
+    display: none;
 }
