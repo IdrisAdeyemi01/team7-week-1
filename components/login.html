@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../Assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../Assets/favicon/site.webmanifest">
+    <title>login page</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <img src="../Assets/logo.svg" class="logo">
+        <div class="nav-items">
+            <a href="../index.html">Home</a>
+            <a href="countdown.html">Countdown</a>
+            <a href="shop-page.html">Products</a>
+            <a href="#">Cart</a>
+            <span><a href="login.html" class="active">Login</a>/
+                <a href="signup.html">Signup</a></span>
+        </div>
+    </nav>
+    <main class="login-container">
+        <form class="login-form login">
+            <input type="email" name="email" id="email" placeholder="E-mail">
+            <input type="password" name="password" id="password" placeholder="Password">
+            <input type="checkbox" id="checkbox" name="checkbox">
+            <label for="checkbox">remember me</label>
+            <a href="#">forgot account</a>
+            <input type="submit" value="LOGIN" id="submit">
+        </form>
+        <div class="account-extra">
+            <h5>Don't have an account yet?</h5>
+            <a href="signup.html">CREATE AN ACCOUNT</a>
+        </div>
+    </main>
+</body>
+</html>
