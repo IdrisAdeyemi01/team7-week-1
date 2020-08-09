@@ -173,7 +173,6 @@ button, button:hover {
     width: 550px;
     height: 550px;
     text-align: center;
-    border-bottom: 1px solid rgba(0,0,0,0.95);
 }
 .store-item .images .arrow {
     width: 50px;
