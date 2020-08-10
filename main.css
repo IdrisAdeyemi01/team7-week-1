@@ -23,6 +23,15 @@ button, button:hover {
     font-family: Montserrat regular;
     src: url(fonts/Montserrat-Regular.ttf);
 }
+@font-face {
+    font-family: Montserrat medium;
+    src: url(fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: Montserrat light;
+    src: url(fonts/Montserrat-Light.ttf);
+}
+
 .nav-bar {
     width: 100%;
     margin: 0;
@@ -209,5 +218,116 @@ button, button:hover {
 }
 .store-item .store-item-cnt {
     border: 1px solid red;
+    text-align: left;
+    padding: 15px 20px;
+}
+.title {
+    margin: 5px 0;
+    font-size: 34px;
+    font-family: 'Montserrat bold', sans-serif;
+}
+.h6 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    font-family: 'Montserrat light', sans-serif;
+}
+.pane {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.prize {
+    font-size: 27px;
+    font-family: 'Montserrat bold', sans-serif;
+}
+.available {
+    font-size: 17px;
+    font-family: 'Montserrat light', sans-serif;
+}
+.available em {
+    font-family: 'Montserrat medium', sans-serif;
+}
+.remark {
+    font-size: 18px;
+    font-family: 'Montserrat medium', sans-serif;
+}
+.sizes, .color {
+    width: 100%;
+    margin: 8px 0;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    width: 100%;
+    margin: 8px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Montserrat bold', sans-serif;
+}
+.buttons, .colors, .Qty input {
+    width: 100%;
+    margin: 4px 0 8px 0;
+    padding: 0;
+}
+.buttons button {
+    width: 35px;
+    padding: 5px 0;
+    border-radius: 3px;
+    background: whitesmoke;
+    color: palevioletred;
+}
+header span {
+    display: block;
+    margin-left: 10px;
+    font-family: 'Montserrat regular', sans-serif;
+}
+.colors button {
+    width: 35px;
+    height: 22px;
+    border-radius: 3px;
+}
+.colors button:nth-child(1) {
+    background: green;
+}
+.colors button:nth-child(2) {
+    background: blue;
+}
+.colors button:nth-child(3) {
+    background: red;
+}
+.colors button:nth-child(4) {
+    background: orange;
+}
+.Qty {
+    width: 100%;
+    margin: 5px 0;
+}
+.Qty input {
+    border: 1px solid black;
+    outline: none;
+    width: 40px;
+    font-size: 16px;
+    font-family: 'Montserrat regular', sans-serif;
+}
+.Qty input:hover {
+    border: 1px solid black;
+    outline: none;
+}
+.preorder-btn {
+    display: block;
     text-align: center;
+    margin: 14px 0;
+    padding: 7px 0;
+    background: blue;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Montserrat bold', sans-serif;
 }
