@@ -35,9 +35,9 @@ let nextBtn = document.querySelector('#next');
 let slideShow = document.querySelector('#slide');
 let currentIndex = 0;
 var cont = true;
-slideShow.addEventListener('mousein', function() {
+slideShow.onmouseover = function() {
   cont = false;
-});
+};
 nextBtn.onclick = function() {
   console.log('working');
   cont = false;
@@ -79,3 +79,42 @@ window.onload = (event) => {
       ,4000);
   }
 };
+
+  // MAKING THE IMAGES SHOW;
+  let image_d;
+
+  // MAKING THE VALUES SHOW
+  let sizes, xs, s, m, l, xl, colors, green, blue, red, orange;
+  sizes = document.querySelector('#size-value');
+  colors = document.querySelector('#color-value');
+  xs = document.querySelector('#xs');
+  s = document.querySelector('#s');
+  m = document.querySelector('#m');
+  l = document.querySelector('#l');
+  xl = document.querySelector('#xl');
+  green = document.querySelector('#green');
+  blue = document.querySelector('#blue');
+  red = document.querySelector('#red');
+  orange = document.querySelector('#orange');
+
+  // FUNCTIONS
+  function value() {
+    sizes.innerHTML = this.value;
+  };
+  xs.onclick = value;
+  s.onclick = value;
+  m.onclick = value;
+  l.onclick = value;
+  xl.onclick = value;
+  
+  function color() {
+    // this.classList.add('bordered');
+    // this.addEventListener('mouseout', function() {
+    //   this.classList.remove('bordered');
+    // });
+    colors.innerHTML = this.value;
+  };
+  green.onclick = color;
+  blue.onclick = color;
+  red.onclick = color;
+  orange.onclick = color;
