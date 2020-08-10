@@ -34,18 +34,48 @@ let prevBtn = document.querySelector('#prev');
 let nextBtn = document.querySelector('#next');
 let slideShow = document.querySelector('#slide');
 let currentIndex = 0;
-
+var cont = true;
+slideShow.addEventListener('mousein', function() {
+  cont = false;
+});
 nextBtn.onclick = function() {
   console.log('working');
+  cont = false;
     currentIndex++;
     slideShow.src = image[currentIndex];
-    if (currentIndex > images.length - 1) {currentIndex = 0}
+    var img_length = image.length - 1;
+    setInterval(
+      function change() {
+        cont = true;
+      }, 7000);
+    if (currentIndex > img_length) {currentIndex = 0}
     return currentIndex;
 };
 prevBtn.onclick = function() {
   console.log('working');
+  cont = false;
     currentIndex--;
     slideShow.src = image[currentIndex];
-    if (currentIndex < 0) {currentIndex = images.length - 1}
+    var img_length = image.length - 1;
+    setInterval(
+      function change() {
+        cont = true;
+      }, 7000);
+    if (currentIndex < 0) {currentIndex = img_length}
     return currentIndex;
+};
+
+window.onload = (event) => {
+  if (cont === true) {
+    setInterval(
+      function move() {
+        console.log('i move');
+        currentIndex++;
+        slideShow.src = image[currentIndex];
+        img_length = image.length;
+        if (currentIndex > img_length) { currentIndex = -1 }
+        return currentIndex;
+      }
+      ,4000);
+  }
 };
