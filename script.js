@@ -26,3 +26,26 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+// SLIDE SHOW FOR THE PRODUCT PAGE
+let image = [ '../Assets/images/items.png', '../Assets/images/green.png', '../Assets/images/blue.png', 
+'../Assets/images/red.png', '../Assets/images/orange.png'];
+let prevBtn = document.querySelector('#prev');
+let nextBtn = document.querySelector('#next');
+let slideShow = document.querySelector('#slide');
+let currentIndex = 0;
+
+nextBtn.onclick = function() {
+  console.log('working');
+    currentIndex++;
+    slideShow.src = image[currentIndex];
+    if (currentIndex > images.length - 1) {currentIndex = 0}
+    return currentIndex;
+};
+prevBtn.onclick = function() {
+  console.log('working');
+    currentIndex--;
+    slideShow.src = image[currentIndex];
+    if (currentIndex < 0) {currentIndex = images.length - 1}
+    return currentIndex;
+};
