@@ -294,16 +294,16 @@ header span {
     border-radius: 3px;
 }
 .colors button:nth-child(1) {
-    background: green;
+    background: #90cb5d;
 }
 .colors button:nth-child(2) {
-    background: blue;
+    background: #00a3e9;
 }
 .colors button:nth-child(3) {
-    background: red;
+    background: #f10f31;
 }
 .colors button:nth-child(4) {
-    background: orange;
+    background: #ff5733;
 }
 .Qty {
     width: 100%;
