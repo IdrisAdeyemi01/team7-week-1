@@ -1,6 +1,6 @@
-# shop7
+# shop7ecx
 
-A new Flutter application.
+A new Flutter application for online carting
 
 ## Getting Started
 

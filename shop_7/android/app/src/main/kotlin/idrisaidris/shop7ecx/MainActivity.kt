@@ -1,4 +1,4 @@
-package idrisaidris.shop7
+package idrisaidris.shop7ecx
 
 import io.flutter.embedding.android.FlutterActivity
 
